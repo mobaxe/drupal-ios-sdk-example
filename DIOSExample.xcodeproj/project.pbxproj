@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		1D0B65C712653F2F00C5AA1B /* TaxonomyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0B65C512653F2F00C5AA1B /* TaxonomyViewController.m */; };
 		1D0B65C812653F2F00C5AA1B /* TaxonomyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D0B65C612653F2F00C5AA1B /* TaxonomyViewController.xib */; };
+		1D1A6D49136F4AE3009BA19B /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 1D1A6D45136F4AE3009BA19B /* CHANGELOG.md */; };
+		1D1A6D4A136F4AE3009BA19B /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 1D1A6D45136F4AE3009BA19B /* CHANGELOG.md */; };
+		1D1A6D4B136F4AE3009BA19B /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D1A6D47136F4AE3009BA19B /* JSONKit.m */; };
+		1D1A6D4C136F4AE3009BA19B /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D1A6D47136F4AE3009BA19B /* JSONKit.m */; };
+		1D1A6D4D136F4AE3009BA19B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1D1A6D48136F4AE3009BA19B /* README.md */; };
+		1D1A6D4E136F4AE3009BA19B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1D1A6D48136F4AE3009BA19B /* README.md */; };
 		1D3623260D0F684500981E51 /* DIOSExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* DIOSExampleAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -118,6 +124,10 @@
 		1D0B65C412653F2F00C5AA1B /* TaxonomyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxonomyViewController.h; sourceTree = "<group>"; };
 		1D0B65C512653F2F00C5AA1B /* TaxonomyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxonomyViewController.m; sourceTree = "<group>"; };
 		1D0B65C612653F2F00C5AA1B /* TaxonomyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TaxonomyViewController.xib; path = Classes/TaxonomyViewController.xib; sourceTree = "<group>"; };
+		1D1A6D45136F4AE3009BA19B /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		1D1A6D46136F4AE3009BA19B /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		1D1A6D47136F4AE3009BA19B /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		1D1A6D48136F4AE3009BA19B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* DIOSExampleAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSExampleAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* DIOSExampleAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSExampleAppDelegate.m; sourceTree = "<group>"; };
@@ -227,6 +237,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1D1A6D44136F4AE3009BA19B /* johnezang-JSONKit-465adc1 */,
 				1DD81FB8125FC52200707724 /* ASIHTTPRequest */,
 				1DD81F58125FC4EE00707724 /* drupal-ios-sdk */,
 				1D3623240D0F684500981E51 /* DIOSExampleAppDelegate.h */,
@@ -252,6 +263,17 @@
 				1DBC21471353CEDF00787D4A /* tests.octest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1D1A6D44136F4AE3009BA19B /* johnezang-JSONKit-465adc1 */ = {
+			isa = PBXGroup;
+			children = (
+				1D1A6D45136F4AE3009BA19B /* CHANGELOG.md */,
+				1D1A6D46136F4AE3009BA19B /* JSONKit.h */,
+				1D1A6D47136F4AE3009BA19B /* JSONKit.m */,
+				1D1A6D48136F4AE3009BA19B /* README.md */,
+			);
+			path = "johnezang-JSONKit-465adc1";
 			sourceTree = "<group>";
 		};
 		1DBC214B1353CEDF00787D4A /* tests */ = {
@@ -468,6 +490,8 @@
 				1DD084531263AE80007F0552 /* ViewsViewController.xib in Resources */,
 				1DD084FC1263D0AC007F0552 /* FileViewController.xib in Resources */,
 				1D0B65C812653F2F00C5AA1B /* TaxonomyViewController.xib in Resources */,
+				1D1A6D49136F4AE3009BA19B /* CHANGELOG.md in Resources */,
+				1D1A6D4D136F4AE3009BA19B /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +535,8 @@
 				1DBC217D1353D2F000787D4A /* ASIProgressDelegate.h in Resources */,
 				1DBC217E1353D2F700787D4A /* Reachability.h in Resources */,
 				1DBC217F1353D2F700787D4A /* Reachability.m in Resources */,
+				1D1A6D4A136F4AE3009BA19B /* CHANGELOG.md in Resources */,
+				1D1A6D4E136F4AE3009BA19B /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,6 +585,7 @@
 				1DD084FB1263D0AC007F0552 /* FileViewController.m in Sources */,
 				1DD087381263EA36007F0552 /* NSData+Base64.m in Sources */,
 				1D0B65C712653F2F00C5AA1B /* TaxonomyViewController.m in Sources */,
+				1D1A6D4B136F4AE3009BA19B /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,6 +608,7 @@
 				1DBC218C1353D64C00787D4A /* DIOSViews.m in Sources */,
 				1DBC21841353D32700787D4A /* ASINetworkQueue.m in Sources */,
 				1DBC218A1353D34900787D4A /* Reachability.m in Sources */,
+				1D1A6D4C136F4AE3009BA19B /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -751,6 +779,7 @@
 				1DBC21581353CEDF00787D4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "DIOSExample" */ = {
 			isa = XCConfigurationList;

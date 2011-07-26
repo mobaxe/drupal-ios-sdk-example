@@ -11,12 +11,48 @@
 #import "DIOSComment.h"
 #import "DIOSFile.h"
 #import "DIOSConfig.h"
+#import <sys/time.h>
+#import <sys/resource.h>
 @implementation NodeViewController
 
 
 - (void)viewDidLoad {
   [super viewDidLoad];
   delegate = (DIOSExampleAppDelegate*)[[UIApplication sharedApplication] delegate];
+}
+double get_time()
+{
+  struct timeval t;
+  struct timezone tzp;
+  gettimeofday(&t, &tzp);
+  return t.tv_sec + t.tv_usec*1e-6;
+}
+- (IBAction)makeNodes:(id)sender {
+  for (int x = 0; x<5; x++) {
+  double time = get_time();
+  DIOSNode *node = [[DIOSNode alloc] initWithSession:[delegate session]];
+  NSMutableDictionary *nodeData = [[NSMutableDictionary alloc] init];
+  // Drupal 7 Version
+  //In Drupal 7 body is required to be setup a tad bit differently.
+  //if running drupal 7 uncomment these lines  
+  
+  NSDictionary *bodyValues = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"body", nil] forKeys:[NSArray arrayWithObjects:@"value", nil]];
+  NSDictionary *languageDict = [NSDictionary dictionaryWithObject:[NSArray arrayWithObject:bodyValues] forKey:@"und"];
+  [nodeData setObject:languageDict forKey:@"body"];
+  [nodeData setObject:@"und" forKey:@"language"];
+  [nodeData setObject:@"article" forKey:@"type"];
+  [nodeData setObject:@"now" forKey:@"date"];
+  [nodeData setObject:@"1" forKey:@"status"];
+  [nodeData setObject:@"1" forKey:@"status"];
+  for (int x = 0; x<100; x++) {
+    NSString *title = [NSString stringWithFormat:@"%d Test", x];
+    [nodeData setObject:title forKey:@"title"];
+    [node nodeSave:nodeData];
+  }
+  double time_after = get_time();
+  double totaltime = time_after - time;
+  NSLog(@"%f %f %f", time, time_after, totaltime);
+  }
 }
 - (IBAction) saveNode {
   DIOSNode *node = [[DIOSNode alloc] initWithSession:[delegate session]];

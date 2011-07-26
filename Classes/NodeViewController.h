@@ -28,9 +28,14 @@
   IBOutlet UITextField *titleCCKSaveField;
   IBOutlet UITextField *typeCCKSaveField;
   IBOutlet UITextField *nidCCKSaveField;
-
+  IBOutlet UIImageView *imageView;
+  IBOutlet UIImageView *imageViewGet;
+  UIPopoverController *popover;
+  IBOutlet UIButton *uploadButton;
+  NSData *imageData;
   DIOSExampleAppDelegate *delegate;
 }
+@property (nonatomic, retain) NSData *imageData;
 
 - (IBAction) saveNode;
 - (IBAction) saveCCKNode:(id)sender;
